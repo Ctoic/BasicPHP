@@ -7,18 +7,63 @@
 </head>
 <body>
     <?php 
-        // integer data type 
+        //  data type 
         $age = 21;
-        $name = "najam";
+        $name = "naJam";
         $ismale = "yes";
         $gpa = 2.67;
 
+        $Academy = "Stoic School";
+
+
         echo $age;
+        echo "<br>";
         echo $name;
+        echo "<br>";
+
         echo $ismale;
+        echo "<br>";
+
         echo $gpa;
+        echo "<br>";
 
         echo strtoupper($name);
+        echo "<br>";
+
+        echo strtolower($name);
+        echo "<br>";
+
+        
+        // STRING SLICING IN PHP 
+        ECHO $name[3];
+
+        echo "<br>";
+        echo str_replace("School" ,"Alma", $Academy);
+        echo "<br>";
+
+        echo substr($Academy, 6 , 4);
+        echo "<br>";
+
+
+        // replacing a string part 
+
+
+
+
+        // IF CONDITIONS IN PHP 
+
+        if ($name == "naJam") {
+            echo "Enter the room";
+        }
+        else
+        {
+            echo "not allowed";
+        }
+
+       
+
+
+
 
         ?>
     
