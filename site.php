@@ -19,7 +19,10 @@
         echo "<p> A Programmer Name Najam lived in the mountains.</p>";
         echo "<p> $charcter was a $charter_interest  freak.</p>";
         echo "<p> $charcter's Imagination was better then his coding skills.</p>";
-        echo "<p> $charcter learned the skill of being the creator.</p>"
+        echo "<p> $charcter learned the skill of being the creator.</p>";
+
+        echo (rand(10,100));
+    
 
 
         ?>
