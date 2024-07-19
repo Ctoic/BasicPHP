@@ -8,24 +8,23 @@
     <title>clcu</title>
 </head>
 <body>
+ 
 
+<h2>Calculator using php beginner guide</h2>
 <form action="bettercalc.php" method="post">
   <div class="form-group">
     <label for="exampleInputEmail1"> First Number </label>
     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number 1" name="num1">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
 
   <div class="form-group">
     <label for="exampleInputEmail1"> Select Operator </label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number 1" name="op">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
 
   <div class="form-group">
     <label for="exampleInputEmail1"> Second Number </label>
     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number 2" name="num2">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
 
   <div class="form-group form-check">
@@ -45,22 +44,37 @@
 
     if($op == "+")
     {
-        ECHO "$num1+$num2";
+        ECHO $num1+$num2;
     }
     elseif($op =="-")
     {
-        echo "$num1 + $num2";
+        echo $num1 - $num2;
     }
 
     elseif($op == "*")
     {
-        echo"$num1 * $num2";
+        echo$num1 * $num2;
     }
+    elseif($op == "/")
+    {
+        echo$num1 /$num2;
+    }
+
+    elseif($op == "%")
+    {
+        echo$num1 % $num2;
+    }
+    elseif($op == "^")
+    {
+        echo pow($num1, $num2);
+    }
+
 
     else 
     {
         echo "it is invalid operator";
     }
+
 
     ?>
     
