@@ -1,6 +1,7 @@
 <?php 
     
     //take marks input from user 
+    readline("Enter your marks : ");
     $marks  = $$_GET["marks"];
     if($marks >= 80 && $marks <= 100)
     {
